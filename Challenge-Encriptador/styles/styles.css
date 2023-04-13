@@ -1,0 +1,24 @@
+body {
+  background-color: #F2F5FA;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #415273;
+}
+
+.logo-container > header{
+
+background: #F2F5FA;
+box-shadow: -2px -2px 6.5px #FFFFFF, 2px 2px 6.5px rgba(174, 174, 192, 0.4);
+display: inline-flex;
+align-items: center;
+margin: 40px;
+padding: 5px;
+border-radius: 21px;
+
+}
+
+.logo-container > header > h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+}
