@@ -21,11 +21,51 @@
 </head>
 
 <body>
+
   <div class="logo-container">
     <header id="logo">
       <img src="assets/logo.png" alt="Secretely" width="47px" height="47px">
       <h1>Secretely</h1>
     </header>
+  </div>
+
+  <div class="main-container">
+
+    <div class="text-input">
+
+      <textarea name="input-text" id="textInput" placeholder="Ingresa aquí el texto que desees encriptar o desencriptar."></textarea>
+
+    </div>
+
+    <div class="text-output">
+
+      <div id="TextOutput" >
+        <span id="noOutTextFound" style="display: none;">
+          <img src="assets/text_not_found.png" alt="text-not-found">
+          <h3> No hay nada aquí 🥺 </h3>
+          <p> Ingresa el texto que desees encriptar o desencriptar.</p>
+        </span>
+        
+        <span id="outTextFound">
+
+          <p id="result">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita totam explicabo eveniet itaque! Unde molestias debitis quidem officiis recusandae fugit nesciunt quo vel enim itaque, dolor vitae, nihil, aliquid quos!
+          </p>
+
+        </span>
+
+        <div class="button-container">
+
+          <button id="CopyButton" class="1-button">Copiar</button>
+          
+        </div>
+
+
+      </div>
+
+    </div>
+
+
   </div>
 </body>
 </html>
