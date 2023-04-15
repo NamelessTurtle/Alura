@@ -17,7 +17,6 @@ padding-bottom: 4px;
 padding-right: 17px;
 padding-left: 5px;
 border-radius: 21px;
-
 }
 
 .logo-container > header > h1 {
@@ -27,129 +26,35 @@ border-radius: 21px;
   color: #728AB7;
 }
 
-#textInput {
-  width: 600px;
-  height: 550px;
-  resize: none;
+.main-container{
+  margin: 40px 10vw 40px 10vw;
+  display: flex;
+}
 
+#inputTextBox{
+  resize: none;
+  height: 60vh;
+  width: 60vh;
   outline: none;
   border: none;
+  padding: 20px;
+  overflow: hidden;
+
+  text-align: left;
+  color: #415273;
+  font-weight: 400;
+  font-size: 16px;
+
   background: #E5ECF7;
   box-shadow: inset -1px -1px 1px rgba(245, 245, 245, 0.7), inset 1px 1px 5px 1px rgba(194, 194, 210, 0.39);
   border-radius: 22px;
-  padding: 10px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-/* identical to box height, or 24px */
-
-  text-align: left;
-
-  color: #415273;
-
 }
 
-.main-container {
-  margin-left: 10%;
-  margin-top: 0;
-  display:inline-flex;
-  align-items: center;
-  
+.textOutputBox-container{
+  display: block;
 }
 
-
-#TextOutput{
-  background-color: red;
-  width: 295px;
-  height: 650px;
-  margin-left: 150px;
-
-  background: #F2F5FA;
-  box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
-  border-radius: 22px;
-
-  padding: 20px;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 0px 20px 0px 20px;
-  gap: 15px;
-
-  justify-content: space-between;
-
-}
-
-#TextOutput > #noOutTextFound > img {
-
-  width: 100%;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-top: 50%;
-
-}
-#TextOutput > #noOutTextFound > h3{
-
-  color: #343A40;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#TextOutput > #noOutTextFound > p{
-
-  color: #495057;
-  text-align: center;
-  font-style: normal;
-  font-size: 14px;
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-#outTextFound{
-
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-.button-container{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 40px;
-}
-
-.button-1{
-
-  background: #F2F5FA;
-  box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
-  border-radius: 22px;
-
-  width: 100%;
-  height: 55px;
-
-  border: none;
-}
-
-.button-1:hover{
-
-  background: red;
+.textOutputBox-container > img{
+  width: 30%;
 }
 
