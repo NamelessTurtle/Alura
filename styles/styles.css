@@ -1,0 +1,183 @@
+:root{
+  --color-background: #F2F5FA;
+  --color-text: #415273;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+}
+body {
+  background-color: var(--color-background);
+  margin: 0;
+}
+
+.global-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.logo-container > header{
+
+background: #F2F5FA;
+box-shadow: -2px -2px 6.5px #FFFFFF, 2px 2px 6.5px rgba(174, 174, 192, 0.4);
+display: inline-flex;
+align-items: center;
+margin: 5vh 0 5vh 2vw;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-right: 17px;
+padding-left: 5px;
+border-radius: 21px;
+height: 50px;
+}
+
+.logo-container > header > h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+  color: #728AB7;
+}
+
+.left-content{ /* this is a div displayed on the left side of the screen*/
+  width: 50%;
+  height: calc(100vh - 10vh - 58px);
+
+}
+
+.left-items-container{ /* this is a div that contains the textarea */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#input-text{ /* this is a textarea */
+  outline: none;
+  border: none;
+  resize: none;
+
+  background: #E5ECF7;
+  box-shadow: inset -1px -1px 1px rgba(245, 245, 245, 0.7), inset 1px 1px 5px 1px rgba(194, 194, 210, 0.39);
+  border-radius: 22px;
+  padding: 10px;
+
+  /* height and width of the textarea needs to be responsive*/
+  width: 60%;
+  height: 50vh;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.buttons-container{ /* this is a div that contains the buttons */
+  width: 60%;
+  height: 55px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-button{
+  border: none;
+  background: #F2F5FA;
+  box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+  border-radius: 22px;
+  height: 100%;
+  width: 45%;
+
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.secondary-button{
+  border: none;
+  background: #E5ECF6;
+  box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+  border-radius: 22px;
+  height: 100%;
+  width: 45%;
+
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+.warning-text{
+  color: #415273;
+
+  opacity: 0.8;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.primary-button:hover{
+  box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+}
+
+.secondary-button:hover{
+  box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
+}
+
+.right-content{
+  width: 50%;
+  height: calc(100vh - 10vh - 58px);
+}
+
+.right-items-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+}
+
+.divOutput{
+  background: #F2F5FA;
+  box-shadow: -2.17893px -2.17893px 6.5368px #FFFFFF, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
+  border-radius: 21.3535px;
+  width: 30%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#txtNotFoundImg{
+  width: 90%;
+}
+
+#OutPutText{
+
+}
+
+#copyBtn{
+  width: 200px;
+  height: 40px;
+  grid-area: 2 / 1 / 3 / 2;
+}
+#OutPutText{
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.showWhenText{
+  FONT-WEIGHT: 100;
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: end;
+  justify-items: center;
+  align-content: space-between;
+  justify-content: center;
+}
